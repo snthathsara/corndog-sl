@@ -1,4 +1,4 @@
-// Main Application Bootstrap for KÍRI KÓPI (Flower Road, Colombo 07)
+// Main Application Bootstrap for CornDogSL (Bambalapitiya & Moratuwa)
 
 import { initTheme } from './theme.js';
 import { initNavbar } from './navbar.js';
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAmbiance();
   initScrollAnimations();
 
-  // Story Highlights interaction (All-Day Brunch, Sandos, Coffee, Matcha & Beverages)
+  // Story Highlights interaction (Korean Corn Dogs, Street Bites, Dalgona Coffee, Fruit Coolers)
   const highlightItems = document.querySelectorAll('.story-highlight-pill');
   highlightItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const email = newsletterForm.querySelector('input[type="email"]')?.value;
       if (email && newsletterMsg) {
-        newsletterMsg.innerHTML = `<span style="color: var(--brand-orange); font-weight: 600;">✓ Welcome! You're subscribed to The Kíri Kōpi Journal & seasonal brew notes.</span>`;
+        newsletterMsg.innerHTML = `<span style="color: var(--brand-orange); font-weight: 600;">✓ Welcome to the CornDogSL Club! You'll receive secret menu drops & special combo perks.</span>`;
         newsletterForm.reset();
       }
     });

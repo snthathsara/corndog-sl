@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KÍRI KÓPI — Specialty Coffee Shop & Bakery | Flower Road, Colombo 07</title>
-  <meta name="description" content="KÍRI KÓPI Specialty Coffee Shop & Bakery at 76/1 Flower Road, Colombo 07. Artisanal brews, Iced Tin Kiri Kōpi, Kyoto ceremonial matcha, all-day brunch, waffles, flaky bakery croissants and gourmet sandos. Open daily 7:30 AM to 10:00 PM. No reservations on weekends, walk-ins only.">
+  <title>CornDogSL — Cheesy Korean Corn Dogs & Street Food | Colombo & Moratuwa</title>
+  <meta name="description" content="CornDogSL (한국 핫도그 🇱🇰 🇰🇷) — Best Korean Corn Dogs in Colombo. Crispy golden panko & potato-crusted mozzarella corn dogs with epic cheese pulls, Korean yangnyeom chicken, cheesy tteokbokki, dalgona coffee & fruit sparklers. Outlets at 59 Marine Drive, Bambalapitiya & 30 Galle Road, Moratuwa.">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
   <!-- Google Fonts: Fraunces (Chunky Vintage Display Serif) & Inter (Clean Geometric Sans) & JetBrains Mono -->
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/src/styles/main.css">
   <script>
     try {
-      const theme = localStorage.getItem('kiri-kopi-theme-preference') || 'light';
+      const theme = localStorage.getItem('corndogsl-theme-preference') || 'light';
       if (theme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
       } else {
@@ -29,9 +29,12 @@
   <!-- Floating Capsule Pill Navbar with Elastic Fluid Blob -->
   <header class="site-header">
     <nav class="nav-capsule-wrapper" aria-label="Main Navigation">
-      <a href="#hero" class="nav-brand" aria-label="KÍRI KÓPI Home">
-        <img src="/kiri-kopi-logo.jpg" alt="KÍRI KÓPI Logo" class="nav-brand-img" />
-        <span>KÍRI KÓPI</span>
+      <a href="#hero" class="nav-brand" aria-label="CornDogSL Home">
+        <img src="/corndogsl-logo.jpg" alt="CornDogSL Logo" class="nav-brand-img" />
+        <span style="display: flex; flex-direction: column; line-height: 1.1;">
+          <span>CornDogSL</span>
+          <span style="font-size: 10px; font-weight: 600; letter-spacing: 0.08em; color: var(--brand-orange); font-family: var(--font-mono);">한국 핫도그</span>
+        </span>
       </a>
 
       <div class="nav-divider" aria-hidden="true"></div>
@@ -44,7 +47,7 @@
         <li class="nav-link-item"><a href="#story" class="nav-link">Our Story</a></li>
         <li class="nav-link-item"><a href="#menu" class="nav-link">Menu</a></li>
         <li class="nav-link-item"><a href="#about" class="nav-link">About</a></li>
-        <li class="nav-link-item"><a href="#reservations" class="nav-link">Visit</a></li>
+        <li class="nav-link-item"><a href="#reservations" class="nav-link">Locations</a></li>
       </ul>
 
       <div class="nav-divider" aria-hidden="true"></div>
@@ -69,7 +72,7 @@
         </button>
 
         <!-- Quick Reserve / Visit CTA -->
-        <a href="#reservations" class="nav-cta-btn">Hours & Visit</a>
+        <a href="#reservations" class="nav-cta-btn">Hours & Outlets</a>
 
         <!-- Mobile Menu Toggle Button -->
         <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Open mobile menu" aria-expanded="false">
@@ -87,18 +90,18 @@
       <a href="#hero" class="mobile-nav-link">Home</a>
       <a href="#highlights" class="mobile-nav-link">Menu Highlights</a>
       <a href="#story" class="mobile-nav-link">Our Story & Craft</a>
-      <a href="#menu" class="mobile-nav-link">Kiri Kōpi Menu</a>
-      <a href="#about" class="mobile-nav-link">About Kíri Kópi</a>
-      <a href="#reservations" class="mobile-nav-link">Visit & Hours</a>
-      <a href="https://wa.me/94777609718?text=Hi%20K%C3%ADri%20K%C3%B3pi%2C%20I%20would%20like%20to%20inquire." target="_blank" rel="noopener noreferrer" class="mobile-nav-link" style="color: var(--brand-orange); display: flex; align-items: center; gap: 8px;">
+      <a href="#menu" class="mobile-nav-link">CornDogSL Menu</a>
+      <a href="#about" class="mobile-nav-link">About CornDogSL</a>
+      <a href="#reservations" class="mobile-nav-link">Outlets & Hours</a>
+      <a href="https://wa.me/94765293561?text=Hi%20CornDogSL%2C%20I%20would%20like%20to%20order%20or%20inquire." target="_blank" rel="noopener noreferrer" class="mobile-nav-link" style="color: var(--brand-orange); display: flex; align-items: center; gap: 8px;">
         <svg style="width: 17px; height: 17px; fill: currentColor;" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-        <span>WhatsApp (077 760 9718)</span>
+        <span>WhatsApp (076 529 3561)</span>
       </a>
-      <a href="https://www.instagram.com/kirikopi.flowerroad/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link" style="color: var(--brand-orange); display: flex; align-items: center; gap: 8px;">
+      <a href="https://www.instagram.com/corndog.sl/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link" style="color: var(--brand-orange); display: flex; align-items: center; gap: 8px;">
         <svg style="width: 17px; height: 17px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
-        <span>Instagram (@kirikopi.flowerroad)</span>
+        <span>Instagram (@corndog.sl)</span>
       </a>
-      <a href="#reservations" class="mobile-nav-cta">View Hours & Policy</a>
+      <a href="#reservations" class="mobile-nav-cta">View Outlets & Hours</a>
     </div>
   </header>
 
@@ -107,12 +110,12 @@
     <!-- Section 1: Editorial Hero with Repeating Stacked Display Typography & Floating Cutout -->
     <section class="hero-editorial-section" id="hero">
       <div class="container">
-        <!-- Live Cafe / Restaurant Status Pill -->
+        <!-- Live Restaurant Status Pill -->
         <div class="hero-status-pill-wrap">
           <div class="badge-pill hero-status-badge" id="hero-status-badge">
             <span class="status-pulse-dot" id="status-pulse-dot"></span>
             <span class="hero-status-text">
-              <span id="cafe-status-label">Open Today</span> · <span id="cafe-status-sub">Closes at 10:00 PM · Walk-Ins Welcome</span>
+              <span id="cafe-status-label">Open Today</span> · <span id="cafe-status-sub">Marine Dr (4 PM - 11 PM) · Moratuwa (2 PM - 9:30 PM)</span>
             </span>
           </div>
         </div>
@@ -120,22 +123,22 @@
         <!-- Giant Repeating Stacked Typography with Floating Cutout -->
         <div class="hero-stacked-wrap">
           <h1 class="hero-stacked-title">
-            <span class="hero-stacked-line">KÍRI KÓPI</span>
-            <span class="hero-stacked-line">KÍRI KÓPI</span>
-            <span class="hero-stacked-line">KÍRI KÓPI</span>
+            <span class="hero-stacked-line">CORNDOGSL</span>
+            <span class="hero-stacked-line">CORNDOGSL</span>
+            <span class="hero-stacked-line">CORNDOGSL</span>
           </h1>
 
-          <!-- Real Specialty Iced Coffee Cutout Floating Over Headline -->
+          <!-- Real Signature Cheesy Corn Dog Cutout Floating Over Headline -->
           <img 
-            src="/kiri-kopi-hero-latte.png" 
-            alt="Kíri Kópi Signature Iced Specialty Coffee" 
+            src="/corndog-hero-cutout.png" 
+            alt="CornDogSL Signature Mozzarella Corn Dog with Epic Cheese Pull" 
             class="hero-floating-cutout"
-            title="Kíri Kópi Signature Iced Specialty Coffee"
+            title="CornDogSL Signature Mozzarella Corn Dog with Epic Cheese Pull"
           />
         </div>
 
         <p class="hero-editorial-sub">
-          Specialty Coffee Shop & Bakery · All-day breakfast, artisanal brews & fresh pastries · <strong>76/1 Flower Road, Col 7 📍</strong> · Walk-ins welcome
+          한국 핫도그 · Best Korean Corn Dogs in Colombo 🇱🇰 🇰🇷 · <strong>59 Marine Dr, Bambalapitiya 📍</strong> &amp; <strong>30 Galle Rd, Moratuwa 📍</strong> · Cheesy Mozzarella Pulls, Street Snacks &amp; Dalgona Sips
         </p>
 
         <div class="hero-pills-row">
@@ -147,7 +150,7 @@
             </svg>
           </a>
           <a href="#reservations" class="pill-action-btn-outline">
-            <span>Hours & Location</span>
+            <span>Locations & Hours</span>
           </a>
         </div>
       </div>
@@ -157,39 +160,36 @@
     <section class="story-highlights-bar" id="highlights">
       <div class="container">
         <div class="story-highlights-container">
-          <!-- 1. All-Day Brunch 🥐 -->
-          <button class="story-highlight-item story-highlight-pill" data-target="menu-mains" aria-label="Explore All-Day Brunch and Mains">
+          <!-- 1. Korean Corn Dogs 🧀 -->
+          <button class="story-highlight-item story-highlight-pill" data-target="menu-mains" aria-label="Explore Korean Corn Dogs and Signatures">
             <div class="story-circle-outer">
               <div class="story-circle-inner">
-                <!-- Croissant / Brunch SVG Icon -->
+                <!-- Corn Dog / Hot Dog SVG Icon -->
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m18 10-4.5 4.5a3 3 0 0 1-4.2 0L5 10a7 7 0 0 1 9.9-5.7L18 10Z"></path>
-                  <path d="m15.5 12.5 3 3a2.5 2.5 0 0 1 0 3.5l-1 1a2.5 2.5 0 0 1-3.5 0l-3-3"></path>
-                  <path d="m8.5 12.5-3 3a2.5 2.5 0 0 0 0 3.5l1 1a2.5 2.5 0 0 0 3.5 0l3-3"></path>
+                  <path d="M4 18l5-5"></path>
+                  <path d="M7 15l10-10a3 3 0 0 1 4.2 4.2L11.2 19.2a3 3 0 0 1-4.2-4.2Z"></path>
+                  <path d="m14 8 2 2"></path>
                 </svg>
               </div>
             </div>
-            <span class="story-highlight-label">All-Day Brunch <span class="heart-icon">🥐</span></span>
+            <span class="story-highlight-label">Korean Corn Dogs <span class="heart-icon">🧀</span></span>
           </button>
 
-          <!-- 2. Sandos & Plates 🥪 -->
-          <button class="story-highlight-item story-highlight-pill" data-target="menu-snacks" aria-label="Explore Sandos and Light Plates">
+          <!-- 2. Street Snacks 🍗 -->
+          <button class="story-highlight-item story-highlight-pill" data-target="menu-snacks" aria-label="Explore Street Snacks, Chicken and Tteokbokki">
             <div class="story-circle-outer">
               <div class="story-circle-inner">
-                <!-- Sandwich SVG Icon -->
+                <!-- Flame / Street Food Snack SVG Icon -->
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M3 11l18-5v12L3 18z"></path>
-                  <path d="M3 11v7"></path>
-                  <path d="M21 6v12"></path>
-                  <path d="M3 15h18"></path>
+                  <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
                 </svg>
               </div>
             </div>
-            <span class="story-highlight-label">Sandos & Plates <span class="heart-icon">🥪</span></span>
+            <span class="story-highlight-label">Street Snacks <span class="heart-icon">🍗</span></span>
           </button>
 
-          <!-- 3. Specialty Coffee ☕ -->
-          <button class="story-highlight-item story-highlight-pill" data-target="menu-sips" aria-label="Explore Specialty Coffee and Espresso">
+          <!-- 3. Korean Coffee & Dalgona ☕ -->
+          <button class="story-highlight-item story-highlight-pill" data-target="menu-sips" aria-label="Explore Korean Coffee, Dalgona and Americano">
             <div class="story-circle-outer">
               <div class="story-circle-inner">
                 <!-- Steaming Coffee Cup Line Art Icon -->
@@ -203,14 +203,14 @@
                 </svg>
               </div>
             </div>
-            <span class="story-highlight-label">Specialty Coffee <span class="heart-icon">☕</span></span>
+            <span class="story-highlight-label">Korean Coffee <span class="heart-icon">☕</span></span>
           </button>
 
-          <!-- 4. Matcha & Sips 🍵 -->
-          <button class="story-highlight-item story-highlight-pill" data-target="menu-beverages" aria-label="Explore Kyoto Matcha and Homemade Sodas">
+          <!-- 4. Fruit Drinks & Sparklers 🍓 -->
+          <button class="story-highlight-item story-highlight-pill" data-target="menu-beverages" aria-label="Explore Korean Strawberry Milk and Yuzu Sparklers">
             <div class="story-circle-outer">
               <div class="story-circle-inner">
-                <!-- Cold Beverage / Matcha Cup Icon -->
+                <!-- Cold Beverage Cup Icon -->
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
                   <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
@@ -220,20 +220,20 @@
                 </svg>
               </div>
             </div>
-            <span class="story-highlight-label">Matcha & Sips <span class="heart-icon">🍵</span></span>
+            <span class="story-highlight-label">Fruit Drinks <span class="heart-icon">🍓</span></span>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- Section: Typographic Ribbon "Coffee is a craft" -->
-    <section class="coffee-quote-ribbon" aria-label="Kiri Kopi Brand Quote">
+    <!-- Section: Typographic Ribbon "Crispy, cheesy & loaded with Seoul street food soul" -->
+    <section class="coffee-quote-ribbon" aria-label="CornDogSL Brand Quote">
       <div class="container">
         <h2 class="coffee-quote-title">
-          <span class="coffee-word-orange">Coffee</span> is a craft, and every cup tells a story.
+          <span class="coffee-word-orange">Crispy</span>, cheesy & loaded with Seoul street food soul.
         </h2>
         <p class="coffee-quote-sub">
-          Specialty single-origin roasts, Kyoto ceremonial matcha, all-day brunch & artisan bakes at 76/1 Flower Road, Colombo 07.
+          Handmade Korean corn dogs with signature mozzarella stretch, crunchy potato cubes, dalgona lattes & fresh coolers across Marine Drive & Moratuwa.
         </p>
       </div>
     </section>
@@ -245,21 +245,22 @@
           <!-- Left: Editorial Prose & Origin Narrative -->
           <div>
             <span class="cobalt-pill-tag" style="margin-bottom: 20px;">
-              From Ella's Hills to Flower Road, Col 7
+              Since 2021 · Sri Lanka's Pioneer Korean Corn Dogs
             </span>
             <h2 class="cobalt-banner-title">
-              Where specialty coffee craft meets warm bakery comforting bakes.
+              Where Colombo fell in love with authentic Korean street food & epic cheese pulls.
             </h2>
             <p class="cobalt-banner-prose">
-              Born in the misty mountain landscape of Ella and brought to Colombo’s leafy Flower Road, KÍRI KÓPI was created as an intentional coffee sanctuary. Here, we honor the rich Sri Lankan tradition of milk coffee reimagined through specialty roasts, poured into our signature vintage iced tins. Alongside freshly whisked ceremonial grade Kyoto matcha, artisan sourdough toasties, cassava waffles, and freshly rolled butter croissants, every detail is crafted for slow sips, rich conversations, and relaxed mornings.
+              Founded in 2021, CornDogSL brought the vibrant night market energy of Seoul straight to the streets of Colombo. From our iconic golden corn dogs with legendary mozzarella cheese pulls and crunchy potato dice to double-glazed yangnyeom chicken bites, spicy cheesy tteokbokki, and frothy dalgona lattes, every stick is hand-dipped and fried fresh to order. Whether grabbing a sunset bite right along Marine Drive in Bambalapitiya or stopping by our Moratuwa spot, enjoy the ultimate crunch.
             </p>
             <div class="cobalt-pill-tags">
-              <span class="cobalt-pill-tag">Specialty Coffee Shop ☕</span>
-              <span class="cobalt-pill-tag">Bakery & All-Day Brunch 🥐</span>
-              <span class="cobalt-pill-tag">76/1 Flower Road, Col 7 📍</span>
-              <span class="cobalt-pill-tag">Daily 7:30 AM – 10:00 PM ⏰</span>
-              <span class="cobalt-pill-tag">Weekends: Walk-Ins Only ✨</span>
-              <span class="cobalt-pill-tag">Work & Pet Friendly 🌿</span>
+              <span class="cobalt-pill-tag">Best Korean Corn Dogs 🇱🇰 🇰🇷</span>
+              <span class="cobalt-pill-tag">100% Mozzarella Pulls 🧀</span>
+              <span class="cobalt-pill-tag">59 Marine Drive, Bambalapitiya 📍</span>
+              <span class="cobalt-pill-tag">30 Galle Road, Moratuwa 📍</span>
+              <span class="cobalt-pill-tag">Marine Drive: Mon–Sun 4 PM – 11 PM ⏰</span>
+              <span class="cobalt-pill-tag">Moratuwa: Tue–Sun 2 PM – 9:30 PM ⏰</span>
+              <span class="cobalt-pill-tag">Dine-In, Takeaway & Delivery (UberEats · PickMe) 🛵</span>
             </div>
           </div>
 
@@ -267,20 +268,20 @@
           <div class="cobalt-collage-wrap">
             <div class="collage-card-main">
               <img 
-                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" 
-                alt="Aesthetic warm cafe ambiance at Kíri Kópi" 
+                src="/corndog-hero.jpg" 
+                alt="Signature Mozzarella Corn Dog with Epic Cheese Pull" 
               />
             </div>
             <div class="collage-card-secondary">
               <img 
-                src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" 
-                alt="Signature Iced Tin Kiri Kōpi specialty coffee" 
+                src="/korean-cheesy-tteokbokki.jpg" 
+                alt="Korean Cheesy Tteokbokki Skillet" 
               />
             </div>
-            <!-- Floating mini latte thumbnail -->
+            <!-- Floating mini corndog thumbnail -->
             <img 
-              src="/kiri-kopi-hero-latte.png" 
-              alt="Floating iced latte" 
+              src="/corndog-hero-cutout.png" 
+              alt="Floating Korean Corn Dog Cutout" 
               class="collage-cutout-floating" 
             />
           </div>
@@ -288,17 +289,17 @@
       </div>
     </section>
 
-    <!-- Section: "IT'S KÓPI O'CLOCK" Banner -->
+    <!-- Section: "IT'S CORNDOG O'CLOCK" Banner -->
     <div class="brunch-oclock-section" id="brunch">
       <div class="container">
         <div class="brunch-oclock-wrap">
           <div class="brunch-oclock-title">
             <span class="brunch-line-top">IT’S</span>
-            <span class="brunch-line-highlight">KÓPI</span>
+            <span class="brunch-line-highlight">CORNDOG</span>
             <span class="brunch-line-bottom">O’CLOCK</span>
           </div>
           <p class="brunch-oclock-sub">
-            Specialty coffee, fresh bakes & all-day breakfast · Served daily from 7:30 AM to 10:00 PM at Flower Road, Colombo 07.
+            Freshly battered, golden fried & cheese-stretched to order · Serving daily at Bambalapitiya (Marine Dr) & Moratuwa.
           </p>
         </div>
       </div>
@@ -309,189 +310,189 @@
     <section class="editorial-menu-section" id="menu">
       <div class="container">
         <div class="editorial-menu-header">
-          <span class="section-label" style="display: inline-block; margin-bottom: 8px;">From Our Espresso Bar, Bakery & Kitchen</span>
+          <span class="section-label" style="display: inline-block; margin-bottom: 8px;">From Our Fryers, Woks & Espresso Bar</span>
           <h2 class="editorial-menu-title">Our Signature Menu</h2>
           <p class="editorial-menu-sub">
-            Crafted fresh daily with single-origin beans, Kyoto ceremonial matcha, farm-fresh eggs, and artisan bakery delights.
+            Crafted fresh to order with stretchy premium mozzarella, halal chicken sausages, authentic Korean gochujang, and specialty brews.
           </p>
         </div>
 
         <div class="editorial-menu-rows">
-          <!-- Row 1: Left Circular Vignette (KK Diner Waffle) · Right Classical Price List (Mains - 4 items) -->
+          <!-- Row 1: Left Circular Vignette (Full Mozzarella Corn Dog) · Right Classical Price List (Mains - 4 items) -->
           <div class="editorial-row" data-category="mains" id="menu-mains">
             <div class="editorial-vignette-col">
               <div class="vignette-frame">
                 <div class="vignette-img-wrap">
-                  <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80" alt="KK Diner Waffle with Nashville Fried Chicken" class="vignette-img" />
+                  <img src="/corndog-hero.jpg" alt="Full Mozzarella Corn Dog" class="vignette-img" />
                 </div>
-                <div class="vignette-caption">KK Diner Waffle</div>
+                <div class="vignette-caption">Full Mozzarella Corn Dog</div>
               </div>
             </div>
             <div class="editorial-list-col">
-              <span class="menu-category-badge">Mains · Brunch & Signatures</span>
+              <span class="menu-category-badge">Mains · Korean Corn Dogs</span>
               <div class="menu-price-items-list">
-                <!-- Item 1: KK Diner Waffle -->
-                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80" data-name="KK Diner Waffle" tabindex="0" role="button" aria-label="Select KK Diner Waffle">
+                <!-- Item 1: Full Mozzarella Corn Dog -->
+                <div class="price-item-row is-active" data-img="/corndog-hero.jpg" data-name="Full Mozzarella Corn Dog" tabindex="0" role="button" aria-label="Select Full Mozzarella Corn Dog">
                   <div class="price-item-top">
-                    <span class="price-item-name">KK Diner Waffle</span>
-                    <span class="price-item-val">Rs. 2,850</span>
+                    <span class="price-item-name">Full Mozzarella Corn Dog</span>
+                    <span class="price-item-val">Rs. 1,450</span>
                   </div>
-                  <p class="price-item-desc">Crispy rice and cassava waffle served with hot whipped chili honey, Nashville-dipped fried chicken breast, roasted garlic aioli, and house-pickled burger cucumbers.</p>
+                  <p class="price-item-desc">100% whole molten mozzarella cheese skewered on wood, hand-dipped in our signature sweet yeasted batter, rolled in golden panko crumbs, fried to a crisp crunch, and finished with honey mustard and ketchup zig-zag.</p>
                 </div>
-                <!-- Item 2: Smashed Beef Burger -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" data-name="Smashed Beef Burger" tabindex="0" role="button" aria-label="Select Smashed Beef Burger">
+                <!-- Item 2: Potato Mozzarella Corn Dog (Gamja) -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&w=800&q=80" data-name="Potato Mozzarella Corn Dog (Gamja)" tabindex="0" role="button" aria-label="Select Potato Mozzarella Corn Dog (Gamja)">
                   <div class="price-item-top">
-                    <span class="price-item-name">Smashed Beef Burger</span>
-                    <span class="price-item-val">Rs. 2,900</span>
+                    <span class="price-item-name">Potato Mozzarella Corn Dog (Gamja)</span>
+                    <span class="price-item-val">Rs. 1,650</span>
                   </div>
-                  <p class="price-item-desc">Homemade smashed prime beef patty seared on the flat-top with sweet caramelized onions, melted cheddar, and crisp gherkins in a bakery milk bun. Served with fries.</p>
+                  <p class="price-item-desc">The viral Korean street favorite: Molten mozzarella and chicken sausage enveloped in diced golden french fries and extra-crispy panko breadcrumbs, drizzled with sweet honey mustard and fiery sriracha mayo.</p>
                 </div>
-                <!-- Item 3: KK Chilli Eggs -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" data-name="KK Chilli Eggs" tabindex="0" role="button" aria-label="Select KK Chilli Eggs">
+                <!-- Item 3: Half & Half Corn Dog -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80" data-name="Half & Half Corn Dog (Cheese & Sausage)" tabindex="0" role="button" aria-label="Select Half & Half Corn Dog">
                   <div class="price-item-top">
-                    <span class="price-item-name">KK Chilli Eggs</span>
-                    <span class="price-item-val">Rs. 2,650</span>
+                    <span class="price-item-name">Half & Half Corn Dog (Cheese & Sausage)</span>
+                    <span class="price-item-val">Rs. 1,350</span>
                   </div>
-                  <p class="price-item-desc">Two poached farm eggs served over rich homemade chili oil, cooling herbed tzatziki yogurt, and spiced beef merguez sausages on wood-fired crusty ciabatta.</p>
+                  <p class="price-item-desc">The best of both worlds: Top half stretchy premium mozzarella cheese, bottom half juicy seasoned chicken bockwurst sausage, golden-fried to perfection with our classic sweet sugar glaze.</p>
                 </div>
-                <!-- Item 4: Jaggery Beef Croissant -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" data-name="Jaggery Beef Croissant" tabindex="0" role="button" aria-label="Select Jaggery Beef Croissant">
+                <!-- Item 4: Crispy Ramen Crusted Corn Dog -->
+                <div class="price-item-row" data-img="/korean-ramen-corndog.jpg" data-name="Crispy Ramen Crusted Corn Dog" tabindex="0" role="button" aria-label="Select Crispy Ramen Crusted Corn Dog">
                   <div class="price-item-top">
-                    <span class="price-item-name">Jaggery Beef Croissant</span>
-                    <span class="price-item-val">Rs. 2,950</span>
+                    <span class="price-item-name">Crispy Ramen Crusted Corn Dog</span>
+                    <span class="price-item-val">Rs. 1,550</span>
                   </div>
-                  <p class="price-item-desc">Slow-cooked pulled jaggery-glazed beef, caramelized onion jam, and crunchy red cabbage salad folded inside a warm French butter croissant, served with homemade raita.</p>
+                  <p class="price-item-desc">Dipped in batter and generously coated with crushed dry ramen noodles before deep-frying for the ultimate shatteringly crisp crunch. Stuffed with stretchy mozzarella and chicken sausage, drizzled with gochujang cheese sauce.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Row 2 (Reversed): Left Classical Price List (Snacks - 3 items) · Right Circular Vignette (Grilled Cheese) -->
+          <!-- Row 2 (Reversed): Left Classical Price List (Snacks - 3 items) · Right Circular Vignette (Yangnyeom Chicken) -->
           <div class="editorial-row is-reversed" data-category="snacks" id="menu-snacks">
             <div class="editorial-vignette-col">
               <div class="vignette-frame">
                 <div class="vignette-img-wrap">
-                  <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80" alt="Grilled Cheese in Shokupan" class="vignette-img" />
+                  <img src="/korean-yangnyeom-chicken.jpg" alt="Korean Yangnyeom Chicken Bites" class="vignette-img" />
                 </div>
-                <div class="vignette-caption">Grilled Cheese Shokupan</div>
+                <div class="vignette-caption">Korean Yangnyeom Chicken Bites</div>
               </div>
             </div>
             <div class="editorial-list-col">
-              <span class="menu-category-badge">Snacks & Sandos · Light Plates</span>
+              <span class="menu-category-badge">Snacks & Street Bites · Light Plates</span>
               <div class="menu-price-items-list">
-                <!-- Item 1: Grilled Cheese Shokupan -->
-                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80" data-name="Grilled Cheese in Shokupan [V]" tabindex="0" role="button" aria-label="Select Grilled Cheese in Shokupan">
+                <!-- Item 1: Korean Yangnyeom Chicken Bites -->
+                <div class="price-item-row is-active" data-img="/korean-yangnyeom-chicken.jpg" data-name="Korean Yangnyeom Chicken Bites" tabindex="0" role="button" aria-label="Select Korean Yangnyeom Chicken Bites">
                   <div class="price-item-top">
-                    <span class="price-item-name">Grilled Cheese in Shokupan [V]</span>
-                    <span class="price-item-val">Rs. 2,250</span>
+                    <span class="price-item-name">Korean Yangnyeom Chicken Bites</span>
+                    <span class="price-item-val">Rs. 1,750</span>
                   </div>
-                  <p class="price-item-desc">Whipped hot chili honey, smoked cheese, local aged gouda, and gooey mozzarella griddled golden in thick Japanese shokupan milk bread.</p>
+                  <p class="price-item-desc">Double-fried boneless crispy chicken chunks tossed in sticky, sweet, and mildly spicy authentic Korean yangnyeom red chili glaze, showered with toasted white sesame seeds and crushed peanuts. Served with yellow pickled radish.</p>
                 </div>
-                <!-- Item 2: Smoked Salmon Sando -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80" data-name="Smoked Salmon Sando" tabindex="0" role="button" aria-label="Select Smoked Salmon Sando">
+                <!-- Item 2: Cheesy Tteokbokki -->
+                <div class="price-item-row" data-img="/korean-cheesy-tteokbokki.jpg" data-name="Cheesy Tteokbokki" tabindex="0" role="button" aria-label="Select Cheesy Tteokbokki">
                   <div class="price-item-top">
-                    <span class="price-item-name">Smoked Salmon Sando</span>
-                    <span class="price-item-val">Rs. 2,750</span>
+                    <span class="price-item-name">Cheesy Tteokbokki</span>
+                    <span class="price-item-val">Rs. 1,850</span>
                   </div>
-                  <p class="price-item-desc">Artisan house focaccia layered with delicate Norwegian smoked salmon, whipped caper cream cheese, shaved red onion, and fresh garden dill.</p>
+                  <p class="price-item-desc">Chewy cylinder Korean rice cakes, fish cakes, and scallions simmered in rich, sweet & savory gochujang chili stew, blanketed with molten torch-seared mozzarella cheese that stretches with every forkful.</p>
                 </div>
-                <!-- Item 3: Breakfast Tacos -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=800&q=80" data-name="Breakfast Tacos [VO]" tabindex="0" role="button" aria-label="Select Breakfast Tacos">
+                <!-- Item 3: Kimchi Cheese Loaded Fries -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=80" data-name="Kimchi Cheese Loaded Fries" tabindex="0" role="button" aria-label="Select Kimchi Cheese Loaded Fries">
                   <div class="price-item-top">
-                    <span class="price-item-name">Breakfast Tacos [VO]</span>
-                    <span class="price-item-val">Rs. 2,350</span>
+                    <span class="price-item-name">Kimchi Cheese Loaded Fries</span>
+                    <span class="price-item-val">Rs. 1,400</span>
                   </div>
-                  <p class="price-item-desc">Soft corn tortillas loaded with creamy scrambled eggs, crumbled Greek feta, fresh guacamole, zesty pico de gallo, fresh coriander, and house sour yogurt drizzle.</p>
+                  <p class="price-item-desc">Piping hot golden shoestring fries seasoned with Korean seaweed salt, loaded with warm melted cheddar cheese sauce, caramelized pan-fried kimchi, spicy Japanese kewpie mayo, and toasted nori flakes.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Row 3: Left Circular Vignette (Iced Tin Kiri Kōpi) · Right Classical Price List (Coffee & Drinks - 4 items) -->
+          <!-- Row 3: Left Circular Vignette (Korean Dalgona Honeycomb Latte) · Right Classical Price List (Coffee & Drinks - 4 items) -->
           <div class="editorial-row" data-category="sips" id="menu-sips">
             <div class="editorial-vignette-col">
               <div class="vignette-frame">
                 <div class="vignette-img-wrap">
-                  <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" alt="Iced Tin Kiri Kōpi Specialty Milk Coffee" class="vignette-img" />
+                  <img src="https://images.unsplash.com/photo-1587080413959-06b859fb107d?auto=format&fit=crop&w=800&q=80" alt="Korean Dalgona Honeycomb Latte" class="vignette-img" />
                 </div>
-                <div class="vignette-caption">Iced Tin Kiri Kōpi</div>
+                <div class="vignette-caption">Korean Dalgona Honeycomb Latte</div>
               </div>
             </div>
             <div class="editorial-list-col">
-              <span class="menu-category-badge">Specialty Coffee · Handcrafted Brews</span>
+              <span class="menu-category-badge">Korean Coffee · Handcrafted Sips</span>
               <div class="menu-price-items-list">
-                <!-- Item 1: Iced Tin Kiri Kōpi -->
-                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" data-name="Iced Tin Kiri Kōpi" tabindex="0" role="button" aria-label="Select Iced Tin Kiri Kōpi">
+                <!-- Item 1: Korean Dalgona Honeycomb Latte -->
+                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1587080413959-06b859fb107d?auto=format&fit=crop&w=800&q=80" data-name="Korean Dalgona Honeycomb Latte" tabindex="0" role="button" aria-label="Select Korean Dalgona Honeycomb Latte">
                   <div class="price-item-top">
-                    <span class="price-item-name">Iced Tin Kiri Kōpi</span>
-                    <span class="price-item-val">Rs. 1,180</span>
+                    <span class="price-item-name">Korean Dalgona Honeycomb Latte</span>
+                    <span class="price-item-val">Rs. 1,150</span>
                   </div>
-                  <p class="price-item-desc">The defining Kiri Kōpi signature: double specialty espresso pulled over sweet condensed milk and chilled whole milk, served over crystal ice in our vintage tin cup.</p>
+                  <p class="price-item-desc">Chilled silky fresh milk layered with whipped golden dalgona coffee foam and topped with crunchy honeycomb toffee candy chunks made in-house. As the toffee melts, the drink transforms into rich caramel nectar.</p>
                 </div>
-                <!-- Item 2: Tiramisu Latte -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80" data-name="Tiramisu Latte (Hot or Cold)" tabindex="0" role="button" aria-label="Select Tiramisu Latte">
+                <!-- Item 2: Iced Korean Americano -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" data-name="Iced Korean Americano (Ah-Ah / 아아)" tabindex="0" role="button" aria-label="Select Iced Korean Americano">
                   <div class="price-item-top">
-                    <span class="price-item-name">Tiramisu Latte (Hot or Cold)</span>
-                    <span class="price-item-val">Rs. 1,280</span>
+                    <span class="price-item-name">Iced Korean Americano (Ah-Ah / 아아)</span>
+                    <span class="price-item-val">Rs. 850</span>
                   </div>
-                  <p class="price-item-desc">Bold espresso poured over chilled whole milk, topped with a velvety crown of mascarpone sweet cream foam, dark Dutch cocoa dusting, and ladyfinger biscuit aroma.</p>
+                  <p class="price-item-desc">The defining daily drink of Seoul youth culture: Double specialty espresso pulled fresh over crystal-clear ice and filtered cold water. Clean, bold, ultra-refreshing with subtle cocoa and nutty undertones.</p>
                 </div>
-                <!-- Item 3: KK Cold Foam - Sicilian Pistachio -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" data-name="KK Cold Foam - Sicilian Pistachio" tabindex="0" role="button" aria-label="Select KK Cold Foam Sicilian Pistachio">
+                <!-- Item 3: Brown Sugar Bingsu Latte -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80" data-name="Brown Sugar Bingsu Latte" tabindex="0" role="button" aria-label="Select Brown Sugar Bingsu Latte">
                   <div class="price-item-top">
-                    <span class="price-item-name">KK Cold Foam - Sicilian Pistachio</span>
-                    <span class="price-item-val">Rs. 1,450</span>
+                    <span class="price-item-name">Brown Sugar Bingsu Latte</span>
+                    <span class="price-item-val">Rs. 1,250</span>
                   </div>
-                  <p class="price-item-desc">Double shot of rich espresso on iced milk, topped with an airy cold foam whipped with pure Sicilian pistachio paste and crushed toasted nut crumbles.</p>
+                  <p class="price-item-desc">Rich chilled whole milk lined with slow-simmered Taiwanese brown sugar tiger stripes, balanced with a bold ristretto shot of espresso and crowned with salted mascarpone cream foam.</p>
                 </div>
-                <!-- Item 4: Orange Cold Brew -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80" data-name="Orange Cold Brew" tabindex="0" role="button" aria-label="Select Orange Cold Brew">
+                <!-- Item 4: Condensed Milk Iced Kopi -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" data-name="Condensed Milk Iced Kopi" tabindex="0" role="button" aria-label="Select Condensed Milk Iced Kopi">
                   <div class="price-item-top">
-                    <span class="price-item-name">Orange Cold Brew</span>
-                    <span class="price-item-val">Rs. 1,180</span>
+                    <span class="price-item-name">Condensed Milk Iced Kopi</span>
+                    <span class="price-item-val">Rs. 980</span>
                   </div>
-                  <p class="price-item-desc">18-hour single origin cold brew coffee steeped low and slow, poured over crystalline ice with freshly pressed Valencia orange juice and fragrant citrus oils.</p>
+                  <p class="price-item-desc">Rich dark espresso pulled directly over creamy sweetened condensed milk and whole milk, vigorously shaken with crushed ice for a smooth, velvety, nostalgic cafe treat.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Row 4 (Reversed): Left Classical Price List (Bakery, Matcha & Drinks - 3 items) · Right Circular Vignette (French Toast) -->
+          <!-- Row 4 (Reversed): Left Classical Price List (Korean Fruit Drinks - 3 items) · Right Circular Vignette (Strawberry Milk) -->
           <div class="editorial-row is-reversed" data-category="refreshers" id="menu-beverages">
             <div class="editorial-vignette-col">
               <div class="vignette-frame">
                 <div class="vignette-img-wrap">
-                  <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80" alt="KK Brioche French Toast with Berry Compote" class="vignette-img" />
+                  <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80" alt="Korean Fresh Strawberry Milk" class="vignette-img" />
                 </div>
-                <div class="vignette-caption">KK French Toast</div>
+                <div class="vignette-caption">Korean Fresh Strawberry Milk</div>
               </div>
             </div>
             <div class="editorial-list-col">
-              <span class="menu-category-badge">Bakery, Matcha & Refreshers</span>
+              <span class="menu-category-badge">Korean Refreshers & Fruit Drinks</span>
               <div class="menu-price-items-list">
-                <!-- Item 1: KK French Toast -->
-                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80" data-name="KK French Toast" tabindex="0" role="button" aria-label="Select KK French Toast">
+                <!-- Item 1: Korean Fresh Strawberry Milk -->
+                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80" data-name="Korean Fresh Strawberry Milk (Ttalgi-uyu)" tabindex="0" role="button" aria-label="Select Korean Fresh Strawberry Milk">
                   <div class="price-item-top">
-                    <span class="price-item-name">KK French Toast</span>
-                    <span class="price-item-val">Rs. 2,650</span>
+                    <span class="price-item-name">Korean Fresh Strawberry Milk (Ttalgi-uyu)</span>
+                    <span class="price-item-val">Rs. 1,100</span>
                   </div>
-                  <p class="price-item-desc">House-baked golden brioche soaked in cinnamon vanilla egg custard, topped with whipped cream cheese, wild blueberry compote, and warm maple berry drizzle.</p>
+                  <p class="price-item-desc">Authentic Korean cafe favorite made with homemade fresh strawberry compote, ripe diced strawberry fruit chunks, and silky chilled fresh dairy milk. Gently shake before sipping.</p>
                 </div>
-                <!-- Item 2: Kyoto Strawberry Matcha -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80" data-name="Kyoto Strawberry Matcha Latté" tabindex="0" role="button" aria-label="Select Kyoto Strawberry Matcha Latté">
+                <!-- Item 2: Sparkling Yuzu Citrus Cooler -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80" data-name="Sparkling Yuzu Citrus Cooler" tabindex="0" role="button" aria-label="Select Sparkling Yuzu Citrus Cooler">
                   <div class="price-item-top">
-                    <span class="price-item-name">Kyoto Strawberry Matcha Latté</span>
-                    <span class="price-item-val">Rs. 1,480</span>
+                    <span class="price-item-name">Sparkling Yuzu Citrus Cooler</span>
+                    <span class="price-item-val">Rs. 950</span>
                   </div>
-                  <p class="price-item-desc">Ceremonial Grade green tea from Kyoto, Japan, hand-whisked to order and gently layered over sweet homemade strawberry compote and silky chilled milk.</p>
+                  <p class="price-item-desc">Fragrant Korean yuja (citron) marmalade shaken with ice-cold sparkling soda water, fresh garden mint leaves, and sliced lime. Fizzy, aromatic, and the perfect palate cleanser for hot fried snacks.</p>
                 </div>
-                <!-- Item 3: Frozen Naarang Lemonade -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80" data-name="Frozen Naarang Lemonade" tabindex="0" role="button" aria-label="Select Frozen Naarang Lemonade">
+                <!-- Item 3: Iced Peach Oolong Tea -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80" data-name="Iced Peach Oolong Tea" tabindex="0" role="button" aria-label="Select Iced Peach Oolong Tea">
                   <div class="price-item-top">
-                    <span class="price-item-name">Frozen Naarang Lemonade</span>
-                    <span class="price-item-val">Rs. 980</span>
+                    <span class="price-item-name">Iced Peach Oolong Tea</span>
+                    <span class="price-item-val">Rs. 900</span>
                   </div>
-                  <p class="price-item-desc">Indigenous Sri Lankan naarang citrus cold-pressed and blended into a glacial slush with garden mint leaves, key lime zest, and raw cane sugar.</p>
+                  <p class="price-item-desc">Slow cold-steeped roasted Taiwanese oolong tea infused with juicy white peach puree and sweet honey, topped with organic chia seeds and a sprig of fresh rosemary.</p>
                 </div>
               </div>
             </div>
@@ -506,33 +507,31 @@
         <div class="stacked-order-wrap">
           <h2 class="stacked-order-title">
             VISIT TODAY<br>
-            KÍRI KÓPI<br>
-            COFFEE • BAKERY • BRUNCH
+            CORNDOGSL<br>
+            CHEESY • CRISPY • KOREAN
           </h2>
-          <img src="/kiri-kopi-hero-latte.png" alt="Kíri Kópi Signature Coffee" class="order-pedestal-cake">
+          <img src="/corndog-hero-cutout.png" alt="CornDogSL Signature Mozzarella Corn Dog" class="order-pedestal-cake">
         </div>
 
         <!-- 3 Branded Experience Cards -->
         <div class="packaging-cards-grid">
-          <!-- Card 1: Specialty Coffee Bar -->
+          <!-- Card 1: Hand-Dipped Corn Dogs -->
           <div class="packaging-card">
             <div class="packaging-card-visual">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
-                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4Z"></path>
-                <line x1="6" y1="2" x2="6" y2="4"></line>
-                <line x1="10" y1="2" x2="10" y2="4"></line>
-                <line x1="14" y1="2" x2="14" y2="4"></line>
+                <path d="M4 18l5-5"></path>
+                <path d="M7 15l10-10a3 3 0 0 1 4.2 4.2L11.2 19.2a3 3 0 0 1-4.2-4.2Z"></path>
+                <path d="m14 8 2 2"></path>
               </svg>
             </div>
-            <h3 class="packaging-card-title">Specialty Coffee Bar</h3>
+            <h3 class="packaging-card-title">Hand-Dipped Corn Dogs</h3>
             <p class="packaging-card-desc">
-              Experience manual brews (V60, Chemex, French Press), espresso craft, and our iconic Iced Tin Kiri Kōpi pulled by skilled baristas.
+              100% whole mozzarella cheese, savory chicken bockwurst, diced potato gamja coatings, and ramen crusts fried fresh to golden perfection.
             </p>
-            <a href="#menu" class="packaging-card-btn">Explore Coffee Bar</a>
+            <a href="#menu" class="packaging-card-btn">Explore Corn Dogs</a>
           </div>
 
-          <!-- Card 2: Bakery & All-Day Brunch -->
+          <!-- Card 2: Street Snacks & Takeaway -->
           <div class="packaging-card">
             <div class="packaging-card-visual">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -541,33 +540,33 @@
                 <path d="M16 10a4 4 0 0 1-8 0"></path>
               </svg>
             </div>
-            <h3 class="packaging-card-title">Bakery & Takeaway</h3>
+            <h3 class="packaging-card-title">Street Bites & Delivery</h3>
             <p class="packaging-card-desc">
-              Flaky butter croissants, fresh brioche french toasts, Japanese shokupan toasties, and bottled cold brews ready for express pickup.
+              Crispy yangnyeom fried chicken bites, steaming cheesy tteokbokki skillets, and loaded kimchi fries available for dine-in, takeaway & delivery.
             </p>
             <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 4px;">
-              <a href="https://www.instagram.com/kirikopi.flowerroad/" target="_blank" rel="noopener noreferrer" class="packaging-card-btn">
+              <a href="https://www.instagram.com/corndog.sl/" target="_blank" rel="noopener noreferrer" class="packaging-card-btn">
                 Follow Instagram
               </a>
               <a href="#reservations" class="packaging-card-btn packaging-card-btn-outline">
-                Opening Hours
+                Outlets & Hours
               </a>
             </div>
           </div>
 
-          <!-- Card 3: Flower Road Ambiance & Work-Friendly Spot -->
+          <!-- Card 3: Two Coastal Outlets -->
           <div class="packaging-card">
             <div class="packaging-card-visual">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="4" width="18" height="12" rx="2"></rect>
-                <line x1="2" y1="20" x2="22" y2="20"></line>
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
               </svg>
             </div>
-            <h3 class="packaging-card-title">Aesthetic Haven</h3>
+            <h3 class="packaging-card-title">Two Great Outlets</h3>
             <p class="packaging-card-desc">
-              Rustic modern interior, exposed brick, natural light, high-speed Wi-Fi, and a relaxed environment for remote work and friendly catch-ups.
+              Catch sunset ocean breezes right on Marine Drive in Bambalapitiya, or drop by our Moratuwa location along Galle Road for your cheesy fix.
             </p>
-            <a href="#reservations" class="packaging-card-btn">Find Us on Map</a>
+            <a href="#reservations" class="packaging-card-btn">Find on Google Maps</a>
           </div>
         </div>
       </div>
@@ -578,7 +577,7 @@
       <div class="container">
         <h2 class="specialties-header-title">Our Most Celebrated Specialties</h2>
         <p class="specialties-header-sub">
-          The five crowd favorites handcrafted fresh daily at KÍRI KÓPI on Flower Road, Colombo 07.
+          The five crowd favorites handcrafted fresh daily at CornDogSL across Bambalapitiya & Moratuwa.
         </p>
 
         <div class="specialties-badges-wrap">
@@ -586,26 +585,26 @@
           <div class="specialties-row-3">
             <a href="#menu" class="specialty-badge-card">
               <div class="specialty-badge-circle">
-                <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=400&q=80" alt="Iced Tin Kiri Kōpi" />
+                <img src="/corndog-hero.jpg" alt="Full Mozzarella Corn Dog" />
               </div>
-              <span class="specialty-badge-name">Iced Tin Kiri Kōpi</span>
-              <span class="specialty-badge-price">Rs. 1,180</span>
+              <span class="specialty-badge-name">Full Mozzarella Corn Dog</span>
+              <span class="specialty-badge-price">Rs. 1,450</span>
             </a>
 
             <a href="#menu" class="specialty-badge-card">
               <div class="specialty-badge-circle">
-                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=400&q=80" alt="KK Diner Waffle" />
+                <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&w=400&q=80" alt="Potato Mozzarella Corn Dog" />
               </div>
-              <span class="specialty-badge-name">KK Diner Waffle</span>
-              <span class="specialty-badge-price">Rs. 2,850</span>
+              <span class="specialty-badge-name">Potato Mozzarella Corn Dog</span>
+              <span class="specialty-badge-price">Rs. 1,650</span>
             </a>
 
             <a href="#menu" class="specialty-badge-card">
               <div class="specialty-badge-circle">
-                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=400&q=80" alt="KK Chilli Eggs" />
+                <img src="/korean-yangnyeom-chicken.jpg" alt="Korean Yangnyeom Chicken" />
               </div>
-              <span class="specialty-badge-name">KK Chilli Eggs</span>
-              <span class="specialty-badge-price">Rs. 2,650</span>
+              <span class="specialty-badge-name">Yangnyeom Chicken Bites</span>
+              <span class="specialty-badge-price">Rs. 1,750</span>
             </a>
           </div>
 
@@ -613,45 +612,45 @@
           <div class="specialties-row-2">
             <a href="#menu" class="specialty-badge-card">
               <div class="specialty-badge-circle">
-                <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=400&q=80" alt="Kyoto Strawberry Matcha" />
+                <img src="/korean-cheesy-tteokbokki.jpg" alt="Cheesy Tteokbokki" />
               </div>
-              <span class="specialty-badge-name">Kyoto Strawberry Matcha</span>
-              <span class="specialty-badge-price">Rs. 1,480</span>
+              <span class="specialty-badge-name">Cheesy Tteokbokki</span>
+              <span class="specialty-badge-price">Rs. 1,850</span>
             </a>
 
             <a href="#menu" class="specialty-badge-card">
               <div class="specialty-badge-circle">
-                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=400&q=80" alt="Jaggery Beef Croissant" />
+                <img src="https://images.unsplash.com/photo-1587080413959-06b859fb107d?auto=format&fit=crop&w=400&q=80" alt="Korean Dalgona Honeycomb Latte" />
               </div>
-              <span class="specialty-badge-name">Jaggery Beef Croissant</span>
-              <span class="specialty-badge-price">Rs. 2,950</span>
+              <span class="specialty-badge-name">Dalgona Honeycomb Latte</span>
+              <span class="specialty-badge-price">Rs. 1,150</span>
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 6: About KÍRI KÓPI — Flower Road Sanctuary & Review Bubble -->
+    <!-- Section 6: About CornDogSL — Marine Drive & Moratuwa Review Bubble -->
     <section class="community-story-section" id="about">
       <div class="container">
         <div class="community-grid">
           <!-- Left: Narrative & Customer Speech Bubble -->
           <div>
-            <span class="section-label" style="display: inline-block; margin-bottom: 8px;">76/1 Flower Road, Colombo 07</span>
+            <span class="section-label" style="display: inline-block; margin-bottom: 8px;">Marine Drive & Moratuwa · Since 2021</span>
             <div class="community-quote-block">
-              "The warmth of Ella's hill country brewed into Colombo’s most aesthetic coffee sanctuary."
+              "The most satisfying, viral cheese pull in Colombo — straight out of Hongdae night markets."
             </div>
             <p class="community-prose">
-              Step in from bustling Flower Road into a light-filled haven of freshly pulled espresso, Kyoto ceremonial matcha, warm butter croissants, and soothing acoustic tunes. Whether you are settling in with your laptop for a focused morning, catching up over all-day brunch with friends, or enjoying our signature iced tin coffee, KÍRI KÓPI welcomes you with open doors.
+              Whether you're chilling by the Indian Ocean along Marine Drive with a piping hot potato mozzarella dog or picking up dinner boxes in Moratuwa, CornDogSL is built around one thing: pure, unabashed street food joy. Every corn dog is made fresh before your eyes with golden crunchiness outside and an endless, gooey mozzarella stretch inside. Pair with our homemade sauces, iced dalgona coffees, and fresh strawberry milk for the complete Seoul street food experience.
             </p>
 
             <!-- Review Speech Bubble -->
             <div class="review-bubble-card">
               <div class="review-stars">★★★★★</div>
               <p class="review-text">
-                "Hands down the best specialty coffee experience in Colombo 7. The Iced Tin Kiri Kōpi is rich, velvety and nostalgic, and the KK Diner Waffle with hot whipped honey is an absolute must-try. Such a peaceful, aesthetic cafe vibe!"
+                "Hands down the best Korean corn dogs in Colombo! The mozzarella cheese pull is endless, the gamja potato coating is wonderfully crunchy, and the honey mustard drizzle is pure perfection. Pair it with Cheesy Tteokbokki and Dalgona Latte for the ultimate treat!"
               </p>
-              <div class="review-author">— Colombo Coffee Connoisseur & Food Guide</div>
+              <div class="review-author">— Colombo Street Food Enthusiast & Restaurant Guide</div>
             </div>
           </div>
 
@@ -659,15 +658,15 @@
           <div style="display: flex; flex-direction: column; gap: 20px;">
             <div style="border-radius: 18px; overflow: hidden; box-shadow: 0 16px 36px rgba(0,0,0,0.12); border: 2px solid var(--border-color);">
               <img 
-                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" 
-                alt="Aesthetic cafe seating at Kíri Kópi Flower Road" 
+                src="/korean-yangnyeom-chicken.jpg" 
+                alt="Crispy Korean Yangnyeom Chicken at CornDogSL" 
                 style="width: 100%; height: 280px; object-fit: cover; display: block;"
               />
             </div>
             <div style="border-radius: 18px; overflow: hidden; box-shadow: 0 16px 36px rgba(0,0,0,0.12); border: 2px solid var(--border-color);">
               <img 
-                src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" 
-                alt="Signature Iced Coffee Drink at Kíri Kópi" 
+                src="/korean-ramen-corndog.jpg" 
+                alt="Crunchy Ramen Crusted Corn Dog with Mozzarella Pull" 
                 style="width: 100%; height: 220px; object-fit: cover; display: block;"
               />
             </div>
@@ -676,77 +675,94 @@
       </div>
     </section>
 
-    <!-- Section 7: Visit & Location Engine (With Clear Weekend Walk-Ins Policy) -->
+    <!-- Section 7: Outlets, Hours & Ordering Channels -->
     <section class="reservation-section" id="reservations">
       <div class="container">
-        <div style="max-width: 640px; margin-bottom: 36px;">
-          <span class="section-label">Visit, Hours & Directions</span>
-          <h2 class="section-title">Visit Us at <em>KÍRI KÓPI Flower Road</em></h2>
+        <div style="max-width: 680px; margin-bottom: 36px;">
+          <span class="section-label">Our Locations, Hours & Directions</span>
+          <h2 class="section-title">Visit Us at <em>CornDogSL</em></h2>
           <p class="section-subtitle">
-            Open daily for specialty coffee, bakery bakes & all-day brunch. Walk-ins are always warmly welcomed.
+            Visit our two outlets in Bambalapitiya (Marine Drive) and Moratuwa (Galle Road). Dine-in counters, takeaway & delivery available.
           </p>
         </div>
 
         <div class="reservation-grid">
-          <!-- Left: Direct Booking Channels Card & Weekend Policy -->
+          <!-- Left: Direct Booking Channels Card & Ordering Info -->
           <div class="reservation-card reservation-direct-card">
             <div class="direct-booking-header">
               <span class="direct-badge">
                 <span class="direct-badge-dot"></span>
-                Walk-In & Reservation Policy
+                Dine-In · Takeaway · PickMe · UberEats
               </span>
-              <h3 class="direct-booking-title">Weekend Walk-Ins & Direct Inquiries</h3>
+              <h3 class="direct-booking-title">Order Direct & Visit Our Counters</h3>
               <p class="direct-booking-desc">
-                <strong>Important:</strong> On Saturdays & Sundays, we do not take table reservations—walk-ins only! For weekday table inquiries or bakery takeaway pre-orders, feel free to reach out directly.
+                Corn dogs are best enjoyed piping hot straight out of the fryer! Walk right up to our counters, order on WhatsApp for quick pickup, or find us on PickMe and UberEats.
               </p>
             </div>
 
             <div class="direct-channels-stack">
               <!-- Channel 1: WhatsApp Inquiry -->
-              <a href="https://wa.me/94777609718?text=Hi%20K%C3%ADri%20K%C3%B3pi%2C%20I%20would%20like%20to%20inquire%20about%20visiting%20or%20pre-ordering." target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-whatsapp">
+              <a href="https://wa.me/94765293561?text=Hi%20CornDogSL%2C%20I%20would%20like%20to%20order%20or%20inquire%20about%20today%27s%20menu." target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-whatsapp">
                 <div class="direct-channel-icon">
                   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                 </div>
                 <div class="direct-channel-meta">
                   <div class="direct-channel-top">
-                    <span class="direct-channel-name">WhatsApp: 077 760 9718</span>
+                    <span class="direct-channel-name">WhatsApp: 076 529 3561</span>
                     <span class="direct-channel-tag">Fast Reply</span>
                   </div>
-                  <p class="direct-channel-hint">+94 77 760 9718 · Connect with our team for table & order inquiries</p>
+                  <p class="direct-channel-hint">+94 76 529 3561 / +94 75 608 3767 · Pre-orders & combos</p>
                 </div>
                 <div class="direct-channel-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                 </div>
               </a>
 
-              <!-- Channel 2: Instagram Kiri Kopi Flower Road -->
-              <a href="https://www.instagram.com/kirikopi.flowerroad/" target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-instagram">
+              <!-- Channel 2: Instagram -->
+              <a href="https://www.instagram.com/corndog.sl/" target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-instagram">
                 <div class="direct-channel-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
                 </div>
                 <div class="direct-channel-meta">
                   <div class="direct-channel-top">
-                    <span class="direct-channel-name">Instagram (@kirikopi.flowerroad)</span>
+                    <span class="direct-channel-name">Instagram (@corndog.sl)</span>
                     <span class="direct-channel-tag">Daily Updates</span>
                   </div>
-                  <p class="direct-channel-hint">Special seasonal drops, fresh bakes, stories & events</p>
+                  <p class="direct-channel-hint">Special box deals, seasonal toppings, reels & promo drops</p>
                 </div>
                 <div class="direct-channel-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                 </div>
               </a>
 
-              <!-- Channel 3: Google Maps Navigation -->
-              <a href="https://www.google.com/maps?q=6.9065372,79.8585982&hl=en-GB&gl=uk&entry=gps&lucs=,94242589,47071704,47069508,47084304&g_st=ic" target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-maps">
+              <!-- Channel 3: Google Maps Bambalapitiya -->
+              <a href="https://www.google.com/maps/place/CorndogSL/@6.89132,79.8538862,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae25bf81f2e0ddb:0x32bf6c2cf8a4e77d!8m2!3d6.89132!4d79.8538862!16s%2Fg%2F11krs_1q6f" target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-maps">
                 <div class="direct-channel-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 </div>
                 <div class="direct-channel-meta">
                   <div class="direct-channel-top">
-                    <span class="direct-channel-name">Find on Google Maps (Flower Road)</span>
+                    <span class="direct-channel-name">Bambalapitiya: 59, Marine Drive</span>
                     <span class="direct-channel-tag">Directions</span>
                   </div>
-                  <p class="direct-channel-hint">76/1 Flower Road, Colombo 07 · Central Colombo location</p>
+                  <p class="direct-channel-hint">Open Mon–Sun 4:00 PM – 11:00 PM · Right opposite the ocean</p>
+                </div>
+                <div class="direct-channel-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </div>
+              </a>
+
+              <!-- Channel 4: Google Maps Moratuwa -->
+              <a href="https://www.google.com/maps?q=CorndogSL+Moratuwa,+30+Galle+Rd+New+Deviation,+Moratuwa+10400&ftid=0x3ae2450070faebcd:0xa4e43c3635c61ded" target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-maps">
+                <div class="direct-channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="direct-channel-meta">
+                  <div class="direct-channel-top">
+                    <span class="direct-channel-name">Moratuwa: 30, Galle Road New Deviation</span>
+                    <span class="direct-channel-tag">Directions</span>
+                  </div>
+                  <p class="direct-channel-hint">Open Tue–Sun 2:00 PM – 9:30 PM (Closed Mon) · Central Galle Rd</p>
                 </div>
                 <div class="direct-channel-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -757,91 +773,93 @@
             <!-- Direct Assurance Pills -->
             <div class="direct-footer-row">
               <div class="direct-phone-call">
-                <span class="phone-label">WhatsApp & Call</span>
+                <span class="phone-label">Call & WhatsApp</span>
                 <div class="phone-links">
-                  <a href="https://wa.me/94777609718" target="_blank" rel="noopener noreferrer" style="font-weight: 600; color: var(--text-primary); text-decoration: underline;">077 760 9718</a>
+                  <a href="https://wa.me/94765293561" target="_blank" rel="noopener noreferrer" style="font-weight: 600; color: var(--text-primary); text-decoration: underline;">076 529 3561</a> / 
+                  <a href="tel:+94756083767" style="font-weight: 600; color: var(--text-primary); text-decoration: underline;">075 608 3767</a>
                 </div>
               </div>
               <div class="direct-assurances">
-                <span class="assurance-pill">☕ Specialty Coffee</span>
-                <span class="assurance-pill">🥐 Fresh Bakery</span>
-                <span class="assurance-pill">🌿 Garden & Indoor</span>
+                <span class="assurance-pill">🧀 100% Mozzarella</span>
+                <span class="assurance-pill">🍗 Halal Chicken</span>
+                <span class="assurance-pill">🛵 Fast Delivery</span>
               </div>
             </div>
           </div>
 
-          <!-- Right: Visit & Location Info -->
+          <!-- Right: Outlets & Operating Hours Column -->
           <div class="visit-info-column">
+            <!-- Outlet 1: Bambalapitiya -->
             <div class="visit-card">
               <h3 class="visit-card-title">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <polyline points="12 6 12 12 16 14"></polyline>
                 </svg>
-                Opening Hours
+                Branch 1: Bambalapitiya (Marine Drive)
               </h3>
               <div class="hours-list">
                 <div class="hours-row">
-                  <span class="hours-day">Monday – Sunday (Daily)</span>
-                  <span class="hours-time">7:30 AM – 10:00 PM</span>
+                  <span class="hours-day">Address</span>
+                  <span class="hours-time" style="font-weight: 600;">59, Marine Drive, Colombo 03</span>
                 </div>
                 <div class="hours-row">
-                  <span class="hours-day">Coffee & Bakery Service</span>
-                  <span class="hours-time" style="color: var(--brand-orange); font-weight: 600;">All Day From 7:30 AM</span>
+                  <span class="hours-day">Operating Days</span>
+                  <span class="hours-time">Monday – Sunday (Daily)</span>
                 </div>
                 <div class="hours-row">
-                  <span class="hours-day">All-Day Brunch & Kitchen</span>
-                  <span class="hours-time">Available All Day</span>
+                  <span class="hours-day">Hours</span>
+                  <span class="hours-time" style="color: var(--brand-orange); font-weight: 600;">4:00 PM – 11:00 PM</span>
                 </div>
                 <div class="hours-row" style="border: none;">
-                  <span class="hours-day">Weekend Reservations</span>
-                  <span class="hours-time" style="color: var(--brand-orange); font-weight: 600;">Walk-Ins Only</span>
+                  <span class="hours-day">Service</span>
+                  <span class="hours-time">Dine-In Counters, Takeaway & Delivery</span>
                 </div>
               </div>
-            </div>
-
-            <!-- Styled Map Visual -->
-            <div class="map-visual-card">
-              <img 
-                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" 
-                alt="KÍRI KÓPI Flower Road Cafe Ambiance" 
-                class="map-bg-image"
-              />
-              <div class="map-pin-overlay">
-                <div class="map-pin-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
-                <div class="map-pin-title">KÍRI KÓPI</div>
-                <div class="map-pin-coords">76/1 Flower Road, Colombo 07 📍</div>
-              </div>
-            </div>
-
-            <!-- Contact & Transit -->
-            <div class="visit-card" style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">
-              <p style="margin-bottom: 6px;">
-                <strong>Address:</strong> 76/1 Flower Road, Colombo 07, Sri Lanka.
-              </p>
-              <p style="margin-bottom: 6px;">
-                <strong>Hours:</strong> 7:30 AM – 10:00 PM Daily.
-              </p>
-              <p style="margin-bottom: 6px;">
-                <strong>Instagram:</strong>
-                <a href="https://www.instagram.com/kirikopi.flowerroad/" target="_blank" rel="noopener noreferrer" style="color: var(--brand-orange); text-decoration: underline; font-weight: 600;">@kirikopi.flowerroad</a>
-              </p>
-              <p style="margin-bottom: 12px;">
-                <strong>WhatsApp / Phone:</strong>
-                <a href="https://wa.me/94777609718" target="_blank" rel="noopener noreferrer" style="color: var(--brand-orange); text-decoration: underline; font-weight: 600;">077 760 9718 (+94 77 760 9718)</a>
-              </p>
-              <a href="https://www.google.com/maps?q=6.9065372,79.8585982&hl=en-GB&gl=uk&entry=gps&lucs=,94242589,47071704,47069508,47084304&g_st=ic" target="_blank" rel="noopener noreferrer" class="visit-map-action">
+              <a href="https://www.google.com/maps/place/CorndogSL/@6.89132,79.8538862,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae25bf81f2e0ddb:0x32bf6c2cf8a4e77d!8m2!3d6.89132!4d79.8538862!16s%2Fg%2F11krs_1q6f" target="_blank" rel="noopener noreferrer" class="visit-map-action" style="margin-top: 14px;">
                 <span class="visit-map-icon-circle">
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                   </svg>
                 </span>
-                <span>Open in Google Maps</span>
+                <span>Open Bambalapitiya on Google Maps</span>
+              </a>
+            </div>
+
+            <!-- Outlet 2: Moratuwa -->
+            <div class="visit-card">
+              <h3 class="visit-card-title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Branch 2: Moratuwa (Galle Road)
+              </h3>
+              <div class="hours-list">
+                <div class="hours-row">
+                  <span class="hours-day">Address</span>
+                  <span class="hours-time" style="font-weight: 600;">30, Galle Road New Deviation, Moratuwa</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Operating Days</span>
+                  <span class="hours-time">Tuesday – Sunday (Closed Mondays)</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Hours</span>
+                  <span class="hours-time" style="color: var(--brand-orange); font-weight: 600;">2:00 PM – 9:30 PM</span>
+                </div>
+                <div class="hours-row" style="border: none;">
+                  <span class="hours-day">Service</span>
+                  <span class="hours-time">Dine-In Counters, Takeaway & Delivery</span>
+                </div>
+              </div>
+              <a href="https://www.google.com/maps?q=CorndogSL+Moratuwa,+30+Galle+Rd+New+Deviation,+Moratuwa+10400&ftid=0x3ae2450070faebcd:0xa4e43c3635c61ded" target="_blank" rel="noopener noreferrer" class="visit-map-action" style="margin-top: 14px;">
+                <span class="visit-map-icon-circle">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </span>
+                <span>Open Moratuwa on Google Maps</span>
               </a>
             </div>
           </div>
@@ -850,18 +868,21 @@
     </section>
   </main>
 
-  <!-- Section 8: Roasted Espresso & Pastel Yellow Luxury Footer -->
+  <!-- Section 8: Roasted Espresso & Golden Yellow Luxury Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top-row">
         <!-- Brand column -->
         <div class="footer-brand-col">
           <a href="#hero" class="footer-logo">
-            <img src="/kiri-kopi-logo.jpg" alt="KÍRI KÓPI Logo" class="footer-logo-img" />
-            <span>KÍRI KÓPI</span>
+            <img src="/corndogsl-logo.jpg" alt="CornDogSL Logo" class="footer-logo-img" />
+            <span style="display: flex; flex-direction: column; line-height: 1.1;">
+              <span>CornDogSL</span>
+              <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: var(--brand-yellow); font-family: var(--font-mono);">한국 핫도그 🇱🇰 🇰🇷</span>
+            </span>
           </a>
           <p class="footer-tagline">
-            Specialty Coffee Shop & Bakery · All-day breakfast, artisanal brews & handcrafted bakes at 76/1 Flower Road, Colombo 07.
+            Cheesy Korean Corn Dogs & Street Food · Bambalapitiya (Marine Drive) & Moratuwa (Galle Road). Since 2021.
           </p>
         </div>
 
@@ -869,47 +890,47 @@
         <div>
           <div class="footer-col-title">Experience</div>
           <ul class="footer-links-list">
-            <li><a href="#hero" class="footer-link">The Coffee House</a></li>
+            <li><a href="#hero" class="footer-link">Home</a></li>
             <li><a href="#highlights" class="footer-link">Story Highlights</a></li>
-            <li><a href="#story" class="footer-link">Our Origins & Craft</a></li>
-            <li><a href="#brunch" class="footer-link">Kópi O’Clock</a></li>
+            <li><a href="#story" class="footer-link">Our Street Story</a></li>
+            <li><a href="#brunch" class="footer-link">CornDog O’Clock</a></li>
             <li><a href="#menu" class="footer-link">Signature Menu</a></li>
-            <li><a href="#reservations" class="footer-link">Hours & Directions</a></li>
+            <li><a href="#reservations" class="footer-link">Outlets & Hours</a></li>
           </ul>
         </div>
 
         <!-- Links: Hours & Contact -->
         <div>
-          <div class="footer-col-title">Visit Us</div>
+          <div class="footer-col-title">Visit Outlets</div>
           <ul class="footer-links-list">
-            <li><span class="footer-link">76/1 Flower Road, Col 7</span></li>
-            <li><span class="footer-link">Open Daily: 7:30 AM – 10:00 PM</span></li>
-            <li><a href="https://wa.me/94777609718" target="_blank" rel="noopener noreferrer" class="footer-link" style="color: var(--brand-yellow); font-weight: 600;">WhatsApp: 077 760 9718</a></li>
-            <li><a href="https://www.instagram.com/kirikopi.flowerroad/" target="_blank" rel="noopener noreferrer" class="footer-link">@kirikopi.flowerroad</a></li>
-            <li><a href="https://www.google.com/maps?q=6.9065372,79.8585982&hl=en-GB&gl=uk&entry=gps&lucs=,94242589,47071704,47069508,47084304&g_st=ic" target="_blank" rel="noopener noreferrer" class="footer-link">Google Maps Location</a></li>
-            <li><span class="footer-link">Weekends: Walk-Ins Only</span></li>
-            <li><span class="footer-link" style="color: var(--brand-yellow); font-weight: 600;">Specialty Coffee & Bakery ☕</span></li>
+            <li><span class="footer-link" style="color: var(--brand-yellow); font-weight: 600;">59 Marine Drive, Bambalapitiya</span></li>
+            <li><span class="footer-link">Mon–Sun: 4:00 PM – 11:00 PM</span></li>
+            <li><span class="footer-link" style="color: var(--brand-yellow); font-weight: 600;">30 Galle Road, Moratuwa</span></li>
+            <li><span class="footer-link">Tue–Sun: 2:00 PM – 9:30 PM (Closed Mon)</span></li>
+            <li><a href="https://wa.me/94765293561" target="_blank" rel="noopener noreferrer" class="footer-link" style="color: var(--brand-yellow); font-weight: 600;">WhatsApp: 076 529 3561</a></li>
+            <li><a href="https://www.instagram.com/corndog.sl/" target="_blank" rel="noopener noreferrer" class="footer-link">@corndog.sl on Instagram</a></li>
+            <li><span class="footer-link">UberEats & PickMe Delivery 🛵</span></li>
           </ul>
         </div>
 
         <!-- Newsletter column -->
         <div class="footer-newsletter-col">
-          <div class="footer-col-title">The Kíri Kōpi Journal</div>
+          <div class="footer-col-title">The CornDogSL Club</div>
           <p style="font-size: 13.5px; color: rgba(250, 246, 240, 0.85); line-height: 1.5;">
-            Seasonal brew releases, weekend specials, and bakery drops sent directly to your inbox.
+            Secret topping drops, cheese pull challenges, and exclusive weekend combo deals.
           </p>
           <form class="newsletter-form" id="newsletter-form">
             <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for newsletter">
             <button type="submit" class="newsletter-btn">Subscribe</button>
           </form>
-          <div class="newsletter-note" id="newsletter-note">Brewed with love. No spam, only warm coffee notes.</div>
+          <div class="newsletter-note" id="newsletter-note">Fried fresh with love. No spam, only golden cheese crunch.</div>
         </div>
       </div>
 
       <!-- Bottom Bar -->
       <div class="footer-bottom-row">
-        <div class="footer-coords">6.9065° N, 79.8586° E · 76/1 Flower Road, Colombo 07, Sri Lanka</div>
-        <div>© 2026 KÍRI KÓPI Flower Road. All Rights Reserved.</div>
+        <div class="footer-coords">Bambalapitiya: 6.8913° N, 79.8539° E · Moratuwa: 6.7725° N, 79.8824° E · Sri Lanka</div>
+        <div>© 2026 CornDogSL. All Rights Reserved.</div>
         <button class="back-to-top-btn" id="back-to-top-btn" aria-label="Back to top">
           <span>Back to Top</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -922,19 +943,19 @@
 
   <!-- Floating WhatsApp Action Button -->
   <a 
-    href="https://wa.me/94777609718?text=Hi%20K%C3%ADri%20K%C3%B3pi%2C%20I%20would%20like%20to%20inquire%20about%20visiting%20or%20pre-ordering." 
+    href="https://wa.me/94765293561?text=Hi%20CornDogSL%2C%20I%20would%20like%20to%20place%20an%20order%20or%20inquire%20about%20today%27s%20menu." 
     target="_blank" 
     rel="noopener noreferrer" 
     class="floating-whatsapp-btn" 
     id="floating-whatsapp-btn"
-    aria-label="Chat with Kíri Kópi on WhatsApp"
+    aria-label="Chat with CornDogSL on WhatsApp"
   >
     <span class="floating-whatsapp-icon">
       <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </span>
     <span class="floating-whatsapp-text">
       <span class="floating-whatsapp-handle">Chat with us</span>
-      <span class="floating-whatsapp-sub">077 760 9718</span>
+      <span class="floating-whatsapp-sub">076 529 3561</span>
     </span>
   </a>
 

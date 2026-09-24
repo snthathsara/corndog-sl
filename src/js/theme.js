@@ -1,4 +1,4 @@
-const THEME_STORAGE_KEY = 'kiri-kopi-theme-preference';
+const THEME_STORAGE_KEY = 'corndogsl-theme-preference';
 
 export function initTheme() {
   const toggleBtn = document.getElementById('theme-toggle-btn');

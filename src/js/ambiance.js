@@ -1,7 +1,7 @@
-// Live Restaurant Status Manager for KÍRI KÓPI (76/1 Flower Road, Colombo 07)
+// Live Restaurant Status Manager for CornDogSL (Bambalapitiya & Moratuwa)
 // Operating Hours:
-// - Monday – Sunday (Daily): 7:30 AM – 10:00 PM
-// - Specialty Coffee Shop & Bakery | Walk-Ins Welcome
+// - Bambalapitiya (59, Marine Drive): Mon–Sun 4:00 PM – 11:00 PM
+// - Moratuwa (30, Galle Road New Deviation): Tue–Sun 2:00 PM – 9:30 PM (Closed Mondays)
 
 export function initAmbiance() {
   updateCafeStatus();
@@ -33,7 +33,6 @@ function getSriLankaTime() {
     if (hour === 24) hour = 0;
     return { weekday, hour, minute, decimalTime: hour + minute / 60 };
   } catch (e) {
-    // Fallback to local time if Intl timeZone fails
     const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     return {
       weekday: days[now.getDay()],
@@ -44,7 +43,7 @@ function getSriLankaTime() {
   }
 }
 
-// Live KÍRI KÓPI Cafe Open/Closed Status
+// Live CornDogSL Branches Open/Closed Status
 export function updateCafeStatus() {
   const statusBadge = document.getElementById('hero-status-badge');
   const pulseDot = document.getElementById('status-pulse-dot');
@@ -53,30 +52,38 @@ export function updateCafeStatus() {
 
   if (!statusLabel) return;
 
-  const { decimalTime } = getSriLankaTime();
+  const { weekday, decimalTime } = getSriLankaTime();
 
-  const openTime = 7.5;   // 7:30 AM
-  const closeTime = 22.0; // 10:00 PM
+  // Bambalapitiya: Mon–Sun 4:00 PM (16.0) to 11:00 PM (23.0)
+  const isBambaOpen = decimalTime >= 16.0 && decimalTime < 23.0;
 
-  let isOpen = false;
-  let label = 'Closed';
-  let sub = '';
+  // Moratuwa: Tue–Sun 2:00 PM (14.0) to 9:30 PM (21.5), Closed Mondays
+  const isMoratuwaOpen = weekday !== 'Mon' && decimalTime >= 14.0 && decimalTime < 21.5;
 
-  if (decimalTime >= openTime && decimalTime < closeTime) {
-    // Currently Open
-    isOpen = true;
-    label = 'Open Today';
-    sub = 'Closes at 10:00 PM · Walk-Ins Welcome';
-  } else if (decimalTime < openTime) {
-    // Early morning before 7:30 AM
-    isOpen = false;
-    label = 'Closed Now';
-    sub = 'Opens at 7:30 AM today at Flower Road, Col 7';
+  let isOpen = isBambaOpen || isMoratuwaOpen;
+  let label = 'Closed Now';
+  let sub = 'Marine Dr (4 PM - 11 PM) · Moratuwa (2 PM - 9:30 PM)';
+
+  if (isBambaOpen && isMoratuwaOpen) {
+    label = 'Open Now at Both Branches';
+    sub = 'Marine Drive closes 11 PM · Moratuwa closes 9:30 PM';
+  } else if (isBambaOpen && !isMoratuwaOpen) {
+    label = 'Open Now at Marine Drive';
+    sub = 'Marine Drive open till 11:00 PM · Moratuwa closed';
+  } else if (!isBambaOpen && isMoratuwaOpen) {
+    label = 'Open Now at Moratuwa';
+    sub = 'Moratuwa open till 9:30 PM · Marine Drive opens 4:00 PM';
   } else {
-    // Late night after 10:00 PM
-    isOpen = false;
-    label = 'Closed Tonight';
-    sub = 'Opens at 7:30 AM tomorrow at Flower Road, Col 7';
+    // Both closed
+    if (decimalTime < 14.0) {
+      label = 'Opening Later Today';
+      sub = weekday === 'Mon'
+        ? 'Marine Drive opens 4:00 PM · Moratuwa closed on Mondays'
+        : 'Moratuwa opens 2:00 PM · Marine Drive opens 4:00 PM';
+    } else {
+      label = 'Closed for the Night';
+      sub = 'Opens tomorrow at 2:00 PM (Moratuwa) & 4:00 PM (Marine Dr)';
+    }
   }
 
   // Update UI Elements

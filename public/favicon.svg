@@ -1,14 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <!-- Pastel Yellow Rounded Background -->
-  <rect width="64" height="64" rx="16" fill="#F7E8A0"/>
-  <!-- Coffee Cup Base -->
-  <path d="M16 26h24v14c0 6.627-5.373 12-12 12s-12-5.373-12-12V26Z" fill="#1A120B"/>
-  <!-- Cup Handle -->
-  <path d="M40 30h3a6 6 0 0 1 6 6v0a6 6 0 0 1-6 6h-3" stroke="#1A120B" stroke-width="4.5" stroke-linecap="round"/>
-  <!-- Steam Curves -->
-  <path d="M22 19c0-3 3-3 3-6" stroke="#1A120B" stroke-width="3" stroke-linecap="round"/>
-  <path d="M28 20c0-3 3-3 3-6" stroke="#1A120B" stroke-width="3" stroke-linecap="round"/>
-  <path d="M34 19c0-3 3-3 3-6" stroke="#1A120B" stroke-width="3" stroke-linecap="round"/>
-  <!-- Tiny Accent Dot / Bean Dot -->
-  <circle cx="28" cy="38" r="2.2" fill="#F7E8A0"/>
+  <!-- Black-ish Brown Rounded Background -->
+  <rect width="64" height="64" rx="16" fill="#140E0A"/>
+  <!-- Golden Orangish Yellow Ring -->
+  <circle cx="32" cy="32" r="28" stroke="#F5A825" stroke-width="2.5" fill="none"/>
+  <circle cx="32" cy="32" r="25.5" stroke="#FFAE1A" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+  <!-- Wooden Stick -->
+  <line x1="22" y1="48" x2="16" y2="56" stroke="#C88536" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Golden Crispy Corn Dog Body -->
+  <path d="M22 46 C16 40 24 24 38 18 C46 14 52 18 50 26 C48 36 32 50 22 46 Z" fill="#F5A825"/>
+  <!-- Crust Highlight Texture -->
+  <path d="M26 42 C22 38 29 27 39 22 C44 19 47 21 46 25" stroke="#FFD875" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Mustard Sinuous Wavy Drizzle -->
+  <path d="M23 44 Q28 40 31 43 T38 33 T44 24" stroke="#FFF5CC" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M23 44 Q28 40 31 43 T38 33 T44 24" stroke="#FFBA24" stroke-width="1.8" stroke-linecap="round" fill="none"/>
 </svg>

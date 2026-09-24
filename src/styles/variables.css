@@ -1,88 +1,88 @@
 :root {
   /* ==========================================================================
-     KÍRI KÓPI — Specialty Coffee Shop & Bakery | Flower Road, Colombo 07
-     Light Pastel Yellow & Black-ish Brown Aesthetic
+     CORNDOGSL — Cheesy Korean Corn Dogs & Street Food Cafe | Colombo, Sri Lanka
+     Light Orangish Yellow & Deep Black-ish Brown Aesthetic
      Inspired by:
-     - Warm Light Pastel Cream & Butter Yellow (#F7E8A0, #FAF0B8, #FFFCEB, #FDF5D2)
-     - Deep Roasted Black-ish Espresso Brown (#1A120B, #23180F, #332317)
-     - Rich Roasted Cocoa, Warm Taupe & Cream (#5A4333, #876E5B, #BFAFA2)
+     - Warm Light Orangish Yellow & Golden Crispy Crust (#F5A825, #FFB833, #FEE9B8, #FFF7E6)
+     - Deep Roasted Black-ish Espresso Brown (#140E0A, #1E150F, #2B1D14)
+     - Molten Mozzarella Cream & Rich Korean Glaze Accents (#FFF8E7, #E67E10, #D34515)
      ========================================================================== */
 
-  /* Light Theme (Pastel Butter Yellow, Soft Warm Cream & Deep Black-ish Espresso) */
-  --bg-page: #FAF7EE;
-  --bg-page-gradient: linear-gradient(165deg, #FFFDF8 0%, #FAF1CE 42%, #F6E69D 100%);
+  /* Light Theme (Light Orangish Yellow, Warm Golden Crust & Deep Black-ish Brown) */
+  --bg-page: #FAF5EA;
+  --bg-page-gradient: linear-gradient(165deg, #FFFDF8 0%, #FDF2D7 45%, #FDE4A2 100%);
   --bg-surface: #FFFFFF;
-  --bg-surface-subtle: #FFFDF4;
+  --bg-surface-subtle: #FFFDF5;
   --bg-surface-card: #FFFFFF;
-  --bg-pill: #F6EBBE;
-  --bg-pill-hover: #F0DE9C;
+  --bg-pill: #FDE8B5;
+  --bg-pill-hover: #FCDA88;
 
-  --text-primary: #1A120B;
-  --text-secondary: #4A392C;
-  --text-muted: #826E5D;
+  --text-primary: #140E0A;
+  --text-secondary: #423225;
+  --text-muted: #7E6A58;
 
-  --border-color: #EADBAC;
-  --border-subtle: #F4EBCB;
-  --border-dark: #1A120B;
+  --border-color: #EBD49E;
+  --border-subtle: #F6E7C4;
+  --border-dark: #140E0A;
 
   /* Brand Palette Tokens */
-  --brand-deep: #120B06;
-  --brand-pine: #1A120B;
-  --brand-forest: #291B10;
-  --brand-emerald: #F6E59A;
-  --brand-sage: #ECD77F;
-  --brand-mint: #FFFDF7;
+  --brand-deep: #100906;
+  --brand-pine: #140E0A;
+  --brand-forest: #241810;
+  --brand-emerald: #F5A825;
+  --brand-sage: #FFBA33;
+  --brand-mint: #FFFDF8;
 
   /* Aliased Core Tokens */
-  --brand-cobalt: #291B10;
-  --brand-cobalt-hover: #1A120B;
-  --brand-cobalt-light: #FAF2D2;
-  --brand-cobalt-rgb: 41, 27, 16;
+  --brand-cobalt: #241810;
+  --brand-cobalt-hover: #140E0A;
+  --brand-cobalt-light: #FDF3D8;
+  --brand-cobalt-rgb: 36, 24, 16;
 
-  --brand-purple: #291B10;
-  --brand-purple-hover: #1A120B;
-  --brand-purple-light: #FAF1CE;
-  --brand-purple-rgb: 41, 27, 16;
+  --brand-purple: #241810;
+  --brand-purple-hover: #140E0A;
+  --brand-purple-light: #FDF2D7;
+  --brand-purple-rgb: 36, 24, 16;
 
-  --brand-orange: #C97F16;
-  --brand-orange-hover: #AA690F;
-  --brand-yellow: #F6E59A;
-  --brand-yellow-pastel: #FAF0B8;
-  --brand-yellow-light: #FDF6D3;
-  --brand-yellow-soft: #FFFDEE;
-  --brand-brown: #1A120B;
+  --brand-orange: #E67E10;
+  --brand-orange-hover: #C86506;
+  --brand-yellow: #F5A825;
+  --brand-yellow-pastel: #FEE9B8;
+  --brand-yellow-light: #FFF4D6;
+  --brand-yellow-soft: #FFF9ED;
+  --brand-brown: #140E0A;
   --brand-brown-light: #3D2B1C;
 
-  --accent-green: #291B10;
-  --accent-green-soft: #FAF1CE;
-  --accent-lamp: #F6E59A;
-  --accent-lamp-glow: rgba(246, 229, 154, 0.4);
+  --accent-green: #241810;
+  --accent-green-soft: #FDF2D7;
+  --accent-lamp: #F5A825;
+  --accent-lamp-glow: rgba(245, 168, 37, 0.42);
 
-  --btn-primary-bg: #1A120B;
-  --btn-primary-text: #FAF0B8;
-  --btn-secondary-bg: #F6E59A;
-  --btn-secondary-text: #1A120B;
-  --btn-secondary-border: #1A120B;
+  --btn-primary-bg: #140E0A;
+  --btn-primary-text: #FFBA33;
+  --btn-secondary-bg: #F5A825;
+  --btn-secondary-text: #140E0A;
+  --btn-secondary-border: #140E0A;
 
   /* Atmospheric Gradients */
-  --banner-gradient: linear-gradient(135deg, #130B06 0%, #1E130B 40%, #2A1A0F 75%, #3C2616 100%);
-  --banner-gradient-subtle: linear-gradient(145deg, #191009 0%, #26170E 55%, #382417 100%);
-  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(246, 229, 154, 0.32) 0%, transparent 60%);
+  --banner-gradient: linear-gradient(135deg, #110B07 0%, #1D140D 40%, #2A1D13 75%, #3E2818 100%);
+  --banner-gradient-subtle: linear-gradient(145deg, #160E08 0%, #24170E 55%, #352215 100%);
+  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(245, 168, 37, 0.35) 0%, transparent 60%);
 
   /* Floating Navbar Tokens — Light Mode */
-  --nav-bar-bg: rgba(255, 253, 245, 0.94);
-  --nav-border: rgba(26, 18, 11, 0.12);
-  --nav-brand-color: #1A120B;
-  --nav-btn-color: #4A392C;
-  --nav-btn-hover: #1A120B;
-  --nav-btn-active-bg: #1A120B;
-  --nav-btn-active-text: #FAF0B8;
-  --nav-divider-color: rgba(26, 18, 11, 0.12);
-  --nav-control-bg: rgba(26, 18, 11, 0.05);
-  --nav-control-hover: rgba(26, 18, 11, 0.1);
-  --nav-shadow: 0 10px 30px rgba(35, 24, 15, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  --nav-bar-bg: rgba(255, 252, 244, 0.94);
+  --nav-border: rgba(20, 14, 10, 0.12);
+  --nav-brand-color: #140E0A;
+  --nav-btn-color: #423225;
+  --nav-btn-hover: #140E0A;
+  --nav-btn-active-bg: #140E0A;
+  --nav-btn-active-text: #FFBA33;
+  --nav-divider-color: rgba(20, 14, 10, 0.12);
+  --nav-control-bg: rgba(20, 14, 10, 0.05);
+  --nav-control-hover: rgba(20, 14, 10, 0.1);
+  --nav-shadow: 0 10px 30px rgba(32, 21, 13, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
 
-  /* Typography Stacks (Preserved from Melt / Warbler's Cafe) */
+  /* Typography Stacks (Preserved Exactly) */
   --font-display: 'Fraunces', 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-serif: 'Fraunces', 'Playfair Display', Georgia, serif;
@@ -116,67 +116,67 @@
 }
 
 /* ==========================================================================
-   Dark Theme (Deep Roasted Dark Espresso, Obsidian Coffee & Pastel Yellow)
+   Dark Theme (Deep Roasted Dark Espresso, Black-ish Brown & Molten Golden Yellow)
    ========================================================================== */
 [data-theme="dark"] {
   --bg-page: #100905;
-  --bg-page-gradient: linear-gradient(155deg, #180E08 0%, #100905 50%, #090503 100%);
-  --bg-surface: #1A110A;
-  --bg-surface-subtle: #24170D;
+  --bg-page-gradient: linear-gradient(155deg, #180D07 0%, #100905 50%, #090503 100%);
+  --bg-surface: #1B110A;
+  --bg-surface-subtle: #25170D;
   --bg-surface-card: #1D120B;
-  --bg-pill: #2C1D11;
-  --bg-pill-hover: #3C2718;
+  --bg-pill: #2E1B0E;
+  --bg-pill-hover: #3E2514;
 
-  --text-primary: #FFF8E6;
-  --text-secondary: #E6D7BD;
-  --text-muted: #A18D79;
+  --text-primary: #FFF9EE;
+  --text-secondary: #E8D7C0;
+  --text-muted: #A8917D;
 
-  --border-color: #382416;
-  --border-subtle: #2A1A0F;
-  --border-dark: #F6E59A;
+  --border-color: #3C2414;
+  --border-subtle: #2C1A0E;
+  --border-dark: #F5A825;
 
-  --brand-cobalt: #F6E59A;
-  --brand-cobalt-hover: #FFF8E6;
-  --brand-cobalt-light: #24170D;
-  --brand-cobalt-rgb: 246, 229, 154;
+  --brand-cobalt: #F5A825;
+  --brand-cobalt-hover: #FFF9EE;
+  --brand-cobalt-light: #25170D;
+  --brand-cobalt-rgb: 245, 168, 37;
 
-  --brand-purple: #F6E59A;
-  --brand-purple-hover: #FAF0B8;
-  --brand-purple-light: #24170D;
-  --brand-purple-rgb: 246, 229, 154;
+  --brand-purple: #F5A825;
+  --brand-purple-hover: #FFBA33;
+  --brand-purple-light: #25170D;
+  --brand-purple-rgb: 245, 168, 37;
 
-  --brand-orange: #F6E59A;
-  --brand-orange-hover: #FAF0B8;
-  --brand-yellow: #F6E59A;
-  --brand-yellow-light: #3D2E0B;
-  --brand-brown: #24170D;
-  --brand-brown-light: #FFF8E6;
+  --brand-orange: #FFB833;
+  --brand-orange-hover: #FFC966;
+  --brand-yellow: #F5A825;
+  --brand-yellow-light: #3D2808;
+  --brand-brown: #25170D;
+  --brand-brown-light: #FFF9EE;
 
-  --accent-green: #F6E59A;
-  --accent-green-soft: #24170D;
-  --accent-lamp: #F6E59A;
-  --accent-lamp-glow: rgba(246, 229, 154, 0.45);
+  --accent-green: #F5A825;
+  --accent-green-soft: #25170D;
+  --accent-lamp: #F5A825;
+  --accent-lamp-glow: rgba(245, 168, 37, 0.45);
 
-  --btn-primary-bg: #F6E59A;
-  --btn-primary-text: #1A120B;
+  --btn-primary-bg: #F5A825;
+  --btn-primary-text: #140E0A;
   --btn-secondary-bg: transparent;
-  --btn-secondary-text: #FFF8E6;
-  --btn-secondary-border: #F6E59A;
+  --btn-secondary-text: #FFF9EE;
+  --btn-secondary-border: #F5A825;
 
-  --banner-gradient: linear-gradient(135deg, #0A0604 0%, #150D07 45%, #22150D 80%, #301E13 100%);
-  --banner-gradient-subtle: linear-gradient(145deg, #120B06 0%, #1F120A 50%, #2D1A0F 100%);
-  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(246, 229, 154, 0.2) 0%, transparent 60%);
+  --banner-gradient: linear-gradient(135deg, #0A0604 0%, #150D07 45%, #22140B 80%, #321D10 100%);
+  --banner-gradient-subtle: linear-gradient(145deg, #120B06 0%, #1F1108 50%, #2D180C 100%);
+  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(245, 168, 37, 0.22) 0%, transparent 60%);
 
   /* Floating Navbar Tokens — Dark Mode */
-  --nav-bar-bg: rgba(26, 17, 10, 0.94);
-  --nav-border: rgba(246, 229, 154, 0.16);
-  --nav-brand-color: #FFF8E6;
-  --nav-btn-color: #E6D7BD;
-  --nav-btn-hover: #FFF8E6;
-  --nav-btn-active-bg: #F6E59A;
-  --nav-btn-active-text: #1A120B;
-  --nav-divider-color: rgba(246, 229, 154, 0.16);
-  --nav-control-bg: rgba(246, 229, 154, 0.08);
-  --nav-control-hover: rgba(246, 229, 154, 0.16);
-  --nav-shadow: 0 10px 32px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(246, 229, 154, 0.15);
+  --nav-bar-bg: rgba(27, 17, 10, 0.94);
+  --nav-border: rgba(245, 168, 37, 0.2);
+  --nav-brand-color: #FFF9EE;
+  --nav-btn-color: #E8D7C0;
+  --nav-btn-hover: #FFF9EE;
+  --nav-btn-active-bg: #F5A825;
+  --nav-btn-active-text: #140E0A;
+  --nav-divider-color: rgba(245, 168, 37, 0.18);
+  --nav-control-bg: rgba(245, 168, 37, 0.08);
+  --nav-control-hover: rgba(245, 168, 37, 0.16);
+  --nav-shadow: 0 10px 32px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(245, 168, 37, 0.18);
 }
